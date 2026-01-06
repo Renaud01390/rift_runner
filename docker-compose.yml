@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: riftrunner_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-riftrunner}
+      POSTGRES_USER: ${POSTGRES_USER:-riftrunner}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-riftrunner_pw}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - riftrunner_pg:/var/lib/postgresql/data
+
+volumes:
+  riftrunner_pg:

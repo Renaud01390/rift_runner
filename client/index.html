@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Rift Runner</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rift Runner</h1>
+      <div class="row">
+        <button id="btnPlay" type="button">Jouer</button>
+        <button id="btnSubmit" type="button" disabled>Envoyer la run</button>
+        <input id="name" maxlength="32" placeholder="Pseudo (optionnel)" />
+      </div>
+      <p class="muted">ZQSD / Flèches — Espace tirer — Shift boost</p>
+    </header>
+
+    <main>
+      <canvas id="game"></canvas>
+
+      <section class="panel">
+        <h2>Leaderboard</h2>
+        <ol id="leaderboard"></ol>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
