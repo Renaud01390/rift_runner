@@ -4,9 +4,7 @@
 Le joueur pilote un avion à travers un canyon généré dynamiquement, en évitant les murs, en détruisant des ennemis et en gérant son carburant.
 
 ▶️ **Jouer en ligne** :  
-https://renaud01390.github.io/rift-runner/client/
-
----
+https://renaud01390.github.io/rift_runner/client/
 
 ## 🕹️ Gameplay
 - Déplacement libre dans un canyon procédural
